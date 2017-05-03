@@ -17,7 +17,7 @@ In addition:
 
 ### Wireframes
 
-This ap will consist of a single scree with game board, game controls, and nav links to the Github, my LinkedIn, and my homepage. Game controls will include Start, Pause, and moving the Ms. Pacman icon. Above the game board will be a number that represents the player's score. On the bottom of the screen, the number of lives the player has left will be shown using Ms. Pacman icon (with each icon representing a separate life).
+This app will consist of a single scree with game board, game controls, and nav links to the Github, my LinkedIn, and my homepage. Game controls will include Start, Pause, and moving the Ms. Pacman icon. Above the game board will be a number that represents the player's score. On the bottom of the screen, the number of lives the player has left will be shown using Ms. Pacman icon (with each icon representing a separate life).
 
 ### Architecture and Technologies
 
