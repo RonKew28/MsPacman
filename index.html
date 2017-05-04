@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="application/javascript" src="./lib/board.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css"/>
     <title></title>
   </head>
   <body>
     <div class='canvas' style='position: relative;'>
+      <canvas id="grid-layer" style="position:absolute; z-index: 0;"></canvas>
+      <canvas id="level-layer" style="position:absolute; z-index: 2;"></canvas>
     <canvas id="pacman-container"></canvas>
     <script src="./lib/bundle.js"></script>
   </body>
