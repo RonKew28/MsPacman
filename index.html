@@ -9,9 +9,11 @@
   </head>
   <body>
 
-    <div id="pacman-container" style="position:relative">
+    <div id="canvas" style="position:relative">
+      <canvas id="dots-layer" style="position:absolute; z-index: -1;"></canvas>
       <canvas id="grid-layer" style="position:absolute; z-index: 0;"></canvas>
       <canvas id="level-layer" style="position:absolute; z-index: 2;"></canvas>
+      <canvas id="player-layer" style="position:absolute; z-index: 3;"></canvas>s
     </div>
     <script src="./lib/bundle.js"></script>
   </body>
