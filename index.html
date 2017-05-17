@@ -9,19 +9,44 @@
     <title></title>
   </head>
   <body>
+    <div id="main">
+      <div id="canvas" style="position: relative">
+        <canvas id="dots-layer" style="position:absolute; z-index: -1;"></canvas>
+        <canvas id="grid-layer" style="position:absolute; z-index: 0;"></canvas>
+        <canvas id="blinky-layer" style="position:absolute; z-index: 1;"></canvas>
+        <canvas id="level-layer" style="position:absolute; z-index: 2;"></canvas>
+        <canvas id="score-layer" style="position:absolute; z-index: 2;"></canvas>
+        <canvas id="player-layer" style="position:absolute; z-index: 3;"></canvas>
+        <canvas id="pinky-layer" style="position:absolute; z-index: 4;"></canvas>
+        <canvas id="inky-layer" style="position:absolute; z-index: 5;"></canvas>
+        <canvas id="clyde-layer" style="position:absolute; z-index: 6;"></canvas>
+      </div>
 
-    <div id="canvas" style="position:relative">
-      <canvas id="dots-layer" style="position:absolute; z-index: -1;"></canvas>
-      <canvas id="grid-layer" style="position:absolute; z-index: 0;"></canvas>
-      <canvas id="blinky-layer" style="position:absolute; z-index: 1;"></canvas>
-      <canvas id="level-layer" style="position:absolute; z-index: 2;"></canvas>
-      <canvas id="score-layer" style="position:absolute; z-index: 2;"></canvas>
-      <canvas id="player-layer" style="position:absolute; z-index: 3;"></canvas>
-      <canvas id="pinky-layer" style="position:absolute; z-index: 4;"></canvas>
-      <canvas id="inky-layer" style="position:absolute; z-index: 5;"></canvas>
-      <canvas id="clyde-layer" style="position:absolute; z-index: 6;"></canvas>
-      <canvas id ="menu-layer" style="position:absolute; z-index: 10;"></canvas>
-    </div>
+      <div id="menu">
+        <h1>Ms. Pacman</h1>
+        <div id="instructions">
+          <h3>Instructions</h3>
+          <span>Move Ms. Pacman around the maze and eat all of the dots.</span>
+          <br/>
+          <span>Every time a ghost catches you, lose one life.</span>
+          <br/>
+          <span>Lose 3 lives and the game is over!</span>
+          </br/>
+          <span>Eating the big dots allows Ms. Pacman to temporarily eat the ghosts and gain extra points.</span>
+          </br>
+          <button id="start-button">Click to Start</button>
+        </div>
+        <canvas id ="menu-layer" ></canvas>
+      </div>
+
+      <div id="lose-menu">
+        <h1>YOU LOSE!</h1>
+        <div id="instructions">
+          </br>
+          <button id="replay-button">Play again?</button>
+        </div>
+      </div>
+  </div>
 
     <script src="./lib/bundle.js"></script>
   </body>
